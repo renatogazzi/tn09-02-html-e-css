@@ -5,19 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML e CSS</title>
-    <style>
-        /* * {
-            border: 1px solid red;
-            background-color: rgba(255, 0, 0, 0.15);
-        } */
-        strong {
-            font-weight: normal;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
+        <img data-func="minha foto" src="./assets/img/avatar.png" alt="Foto do candidato mais promissor que você vai encontrar, acredite no que eu digo..." width="96px" height="96px">
         <h1>Programador Web Junior</h1>
         <ul type="none">
             <li>Renato V. Gazzi</li>
@@ -40,11 +33,11 @@
     </header>
     <hr>
     <main>
-        <section>
+        <section class="destaque">
             <h2>SOBRE</h2>
             <p><b>QUERO SER DEV!!!</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, excepturi. Blanditiis laborum dolor eligendi error. Illo, impedit! Quo, fugiat, vitae, temporibus doloribus quod velit voluptatem nostrum eaque aliquam illum ipsam!</p>
         </section>
-        <section>
+        <section class="destaque">
             <h2>SKILLS</h2>
             <h3>Soft Skills</h3>
             <ul>
@@ -74,7 +67,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="destaque">
             <h2>FORMAÇÃO</h2>
             <table>
                 <tr>
@@ -97,7 +90,7 @@
             </table>
             <p></p>
         </section>
-        <section>
+        <section class="destaque">
             <h2>EXPERIÊNCIA</h2>
             <table>
             <tr>
@@ -112,75 +105,54 @@
                 </tr>
             </table>
         </section>
-        <section>
+        <section class="destaque">
             <h2>Entre em contato comigo!</h2>
             <p>Entre em contato através do meu email, Linked In, Whatsapp, telefone ou... se preferir, preencha o formulário a seguir. Retornarei o mais brevemente possível.</p>
 
             <form action="obrigado.html" method="get" enctype="multipart/form-data">
 
                 <label for="empresaInteressada">Empresa interessada</label><br>
-                <input type="text" id="empresaInteressada" name="empresa" placeholder="Razão Social"><br>
-
-                <div>
-                    <h5>Sexo</h5>
-                    <input type="radio" id="male" name="sexo" value="male">
-                    <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="sexo" value="female">
-                    <label for="female">Female</label><br>
-                    <input type="radio" id="other" name="sexo" value="other">
-                    <label for="other">Other</label>
-                </div><br><br>
-
-                <div>
-                    <h5>Idiomas que vc, recruiter, sabe falar</h5>
-                    <input type="checkbox" id="english" name="english" value="english">
-                    <label for="english">English</label><br>
-                    <input type="checkbox" id="espanol" name="espanol" value="espanol">
-                    <label for="espanol">Espanol</label><br>
-                </div><br><br>
-
-                <label for="">Email</label><br>
+                <input type="text" id="empresaInteressada" name="empresa" placeholder="Razão Social"><br><br>
+                
+                <label for="Email">Email</label><br>
                 <input type="email"><br><br>
 
                 <label for="">Telefone</label><br>
-                <input type="tel"><br><br>
+                <input type="tel"><br>
 
-                <label for="uf">Unidade Federativa</label><br>
-                <select name="uf" id="uf">
-                    <option disabled selected value="">UF</option>
-                    <option value="">AC</option>
-                    <option value="">AL</option>
-                    <option value="">AM</option>
+                <div>
+                    <h5>Experiencia Desejada</h5>
+                    <input type="radio" id="jr" name="xp" value="jr">
+                    <label for="male">Junior</label><br>
+                    <input type="radio" id="pl" name="xp" value="pl">
+                    <label for="female">Pleno</label><br>
+                    <input type="radio" id="sr" name="xp" value="sr">
+                    <label for="other">Senior</label>
+                </div><br>
+
+                <div>
+                    <h5>Escopo de Atuação</h5>
+                    <input type="checkbox" id="front" name="front" value="front">
+                    <label for="english">Front End</label><br>
+                    <input type="checkbox" id="back" name="back" value="back">
+                    <label for="espanol">Back End</label><br>
+                </div><br>
+
+                <label for="contratacao">Contratação</label><br>
+                <select name="contratacao" id="contratacao">
+                    <option disabled selected value="">Contratação</option>
+                    <option value="clt">CLT</option>
+                    <option value="jovem-aprendiz">Jovem Aprendiz</option>
+                    <option value="PJ">PJ</option>
                 </select>
-                <br><br>
-
-                <label for="">Arquivo CV</label><br>
-                <input type="file"><br><br>
-
-                <label for="">Anos de mercado da empresa</label><br>
-                <input type="number"><br><br>
-
-                <label for="">Cor do logo da empresa</label><br>
-                <input type="color"><br><br>
-
-                <label for="">Data prevista para início do trabalho</label><br>
-                <input type="date"><br><br>
-
-                <label for="">Digite o código secreto para falar comigo</label><br>
-                <input type="password"><br><br>
-
-                <label for="">Deixe aqui seus elogios</label><br>
-                <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+                <br>
+                
+                <label for="infoAdicional">Comentários</label><br>
+                <textarea name="infoAdicional" id="infoAdicional" cols="40" rows="10"></textarea><br>
 
                 <button type="reset">Limpar</button><br><br>
                 <button type="submit">Enviar</button>
             </form>
-        </section>
-        <section>
-            <h2>Mapa</h2>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d469113.76459302934!2d-47.20755580732153!3d-23.281219710579435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744e0ebff5b%3A0x769bf4a32f914782!2sGoogle%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1596154185530!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
         </section>
     </main>
     <hr>
