@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     padding: 32px;
@@ -15,33 +16,48 @@ h6{
     color: crimson;
 }
 section{
-    border: 1px solid #808080;
+    /* border: 1px solid #808080; */
     padding: 16px;
 }
 
-section.destaque{
-    background-color: #dfdfdf;
-    border-radius: 8px;
 }
-
-section .destaque{
-    background-color: #f0ca20;
-}
-
 .destaque{
     color: #1443dc;
 }
 
-#empresaInteressada{
-    background-color: rgb(11, 164, 184);
-
-}
-
 [data-func*="foto"] {
     border-radius: 50%;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.85));
+;
     transition: all 0.8s ease-in-out;
 }
 
 [data-func*="foto"]:hover {
     transform: rotate(180deg);
+}
+[href="#top"]
+{
+    background-color: crimson;
+    color: #ffffff;
+    border-radius: 3px;
+    border-radius: 30px;
+    display: block;
+    padding: 5px 10px;
+    border: 2px solid;
+    text-decoration: none;
+    transition: all 0.8s ease-in-out;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+}
+
+[href="#top"]:hover
+{
+background-color: #fff;
+border-color: crimson;
+color: crimson;
+}
+
+main{
+    /* display: flex; */
 }
