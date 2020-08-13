@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML e CSS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head><br>
 
@@ -109,50 +110,52 @@
             <h2>Entre em contato comigo!</h2>
             <p>Entre em contato através do meu email, Linked In, Whatsapp, telefone ou... se preferir, preencha o formulário a seguir. Retornarei o mais brevemente possível.</p>
 
-            <form action="obrigado.html" method="get" enctype="multipart/form-data">
-
-                <label for="empresaInteressada">Empresa interessada</label><br>
-                <input type="text" id="empresaInteressada" name="empresa" placeholder="Razão Social"><br><br>
-                
-                <label for="Email">Email</label><br>
-                <input type="email"><br><br>
-
-                <label for="">Telefone</label><br>
-                <input type="tel"><br>
-
-                <div>
-                    <h5>Experiencia Desejada</h5>
-                    <input type="radio" id="jr" name="xp" value="jr">
-                    <label for="male">Junior</label><br>
-                    <input type="radio" id="pl" name="xp" value="pl">
-                    <label for="female">Pleno</label><br>
-                    <input type="radio" id="sr" name="xp" value="sr">
-                    <label for="other">Senior</label>
-                </div><br>
-
-                <div>
-                    <h5>Escopo de Atuação</h5>
-                    <input type="checkbox" id="front" name="front" value="front">
-                    <label for="english">Front End</label><br>
-                    <input type="checkbox" id="back" name="back" value="back">
-                    <label for="espanol">Back End</label><br>
-                </div><br>
-
-                <label for="contratacao">Contratação</label><br>
-                <select name="contratacao" id="contratacao">
-                    <option disabled selected value="">Contratação</option>
-                    <option value="clt">CLT</option>
-                    <option value="jovem-aprendiz">Jovem Aprendiz</option>
-                    <option value="PJ">PJ</option>
-                </select>
-                <br>
-                
-                <label for="infoAdicional">Comentários</label><br>
-                <textarea name="infoAdicional" id="infoAdicional" cols="40" rows="10"></textarea><br>
-
-                <button type="reset">Limpar</button><br><br>
-                <button type="submit">Enviar</button>
-            </form>
+                <form action="obrigado.html" method="get">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </form>
         </section>
     </main>
     <hr>
@@ -161,6 +164,9 @@
         </p>
     </footer>
     <a href="#top">Ir para o Topo</a>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
