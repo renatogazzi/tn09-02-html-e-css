@@ -10,163 +10,43 @@
 </head><br>
 
 <body>
-    <header>
-        <img data-func="minha foto" src="./assets/img/avatar.png" alt="Foto do candidato mais promissor que você vai encontrar, acredite no que eu digo..." width="96px" height="96px">
-        <h1>Programador Web Junior</h1>
-        <ul type="none">
-            <li>Renato V. Gazzi</li>
-            <li>
-                <a href="tel:++5511974338980">+55 11 97433 8980</a>
-            </li>
-            <li>
-                <a href="mailto:renatogazzi@gmail.com?Subject=Vaga%de%Programador%Jr&Body=Olá,%gostei%do%seu%perfil!">renatogazzi@gmail.com</a>
-            </li>
-            <li>
-                <a href="http://github.com/renatogazzi" target="_blank" rel="noopener noreferer">github.com/renatogazzi</a>
-            </li>
-            <li>
-                <a href="http://www.linkedin.com/in/renato-gazzi-12566528/" target="_blank" rel="noopener noreferer">linkedin.com/in/renato-gazzi-12566528</a>
-            </li>
-            <li>
-                <a href="https://wa.me/+5511974338980?text=%E2%9D%A4%20Ol%C3%A1,%0D%0A%0D%0AAcessei%20o%20site%20agilmindset%20e%20gostaria%20de%20saber%20mais%20sobre%0D%0A" target="_blank" rel="noopener noreferrer">Manda um Zap!</a>
-            </li>
-        </ul>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Programador Web Junior</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Skilles">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#xp">Experiência</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formacao">Formação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
-    <hr>
-    <main>
-        <section class="destaque">
-            <h2>SOBRE</h2>
-            <p><b>QUERO SER DEV!!!</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, excepturi. Blanditiis laborum dolor eligendi error. Illo, impedit! Quo, fugiat, vitae, temporibus doloribus quod velit voluptatem nostrum eaque aliquam illum ipsam!</p>
-        </section>
-        <section class="destaque">
-            <h2>SKILLS</h2>
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Comunicação clara</li>
-                <li>Liderança</li>
-                <li><strong>Trabalho em equipe</strong></li>
-                <li><strong> Flexibilidade e jogo de cintura</strong></li>
-            </ul>
-            <h4>Hard Skills</h4>
-            <ul>
-                <li>
-                    <h5>Front End</h5>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>React.js</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Back End</h4>
-                    <ul>
-                        <li>PHP</li>
-                        <li>Node.js</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="destaque">
-            <h2>FORMAÇÃO</h2>
-            <table>
-                <tr>
-                    <th colspan="3">Ano</th>
-                </tr>
-                <tr>
-                    <td>Programação Web Full Stack</td>
-                    <td>Digital House</td>
-                    <td rowspan="2">Extensão</td>
-                </tr>
-                <tr>
-                    <td>Perucas para Carecas</td>
-                    <td>Digital Hair</td>
-                </tr>
-                <tr>
-                    <td>Inglês</td>
-                    <td>Wizard</td>
-                    <td>Idioma</td>
-                </tr>
-            </table>
-            <p></p>
-        </section>
-        <section class="destaque">
-            <h2>EXPERIÊNCIA</h2>
-            <table>
-            <tr>
-                <td>DH</td>
-                <td>Professor</td>
-                <td>Mai/19 - Atual</td>
-            </tr>
-            <tr>
-                <td>Jüssi</td>
-                <td>Dev Pleno</td>
-                <td>Out/19 - Atual</td>
-                </tr>
-            </table>
-        </section>
-        <section class="destaque">
-            <h2>Entre em contato comigo!</h2>
-            <p>Entre em contato através do meu email, Linked In, Whatsapp, telefone ou... se preferir, preencha o formulário a seguir. Retornarei o mais brevemente possível.</p>
-
-                <form action="obrigado.html" method="get">
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputAddress">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                      <label for="inputAddress2">Address 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                      </div>
-                      <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                          Check me out
-                        </label>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                  </form>
-        </section>
-    </main>
-    <hr>
-    <footer>
-        <p>Renato Vicente Gazzi 2020 &copy;| <a href="mailto:renatogazzi@gmail.com?Subject=Vaga%de%Programador%Jr&Body=Olá,%gostei%do%seu%perfil!">renatogazzi@gmail.com</a> |                <a href="https://wa.me/+5511974338980?text=%E2%9D%A4%20Ol%C3%A1,%0D%0A%0D%0AAcessei%20o%20site%20agilmindset%20e%20gostaria%20de%20saber%20mais%20sobre%0D%0A" target="_blank" rel="noopener noreferrer">Manda um Zap!</a>
+   <main>
+       Texticulo
+   </main>
+    <footer class="bg-dark">
+        <p>Renato Vicente Gazzi 2020 &copy;| <a href="mailto:renatogazzi@gmail.com?Subject=Vaga%de%Programador%Jr&Body=Olá,%gostei%do%seu%perfil!">renatogazzi@gmail.com</a> | <a href="https://wa.me/+5511974338980?text=%E2%9D%A4%20Ol%C3%A1,%0D%0A%0D%0AAcessei%20o%20site%20agilmindset%20e%20gostaria%20de%20saber%20mais%20sobre%0D%0A" target="_blank" rel="noopener noreferrer">Manda um Zap!</a>
         </p>
     </footer>
-    <a href="#top">Ir para o Topo</a>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
